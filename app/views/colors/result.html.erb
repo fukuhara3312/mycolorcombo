@@ -1,0 +1,11 @@
+<h2>結果</h2>
+
+<p>選んだ色：</p>
+<div style="width:80px; height:80px; background:<%= @input_color %>"></div>
+
+<p>相性のよい色：</p>
+<div style="width:80px; height:80px; background:<%= @matched_color %>"></div>
+
+<p>HEX: <%= @matched_color %></p>
+
+<%= link_to "戻る", colors_path %>

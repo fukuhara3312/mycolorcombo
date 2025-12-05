@@ -1,0 +1,10 @@
+<h1>色の相性チェッカー</h1>
+
+<%= form_with url: match_colors_path, method: :post do |f| %>
+  <div>
+    <label>色を選んでください:</label>
+    <%= f.color_field :color %>
+  </div>
+
+  <%= f.submit "相性のよい色を調べる" %>
+<% end %>
